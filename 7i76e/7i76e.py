@@ -9,14 +9,13 @@ from help import Ui_Dialog as helpDialog
 from about import Ui_about as aboutDialog
 import helptext
 
-class App(QMainWindow):
-	def __init__(self):
-		super(App, self).__init__()
+class MainWindow(QMainWindow):
+	def __init__(self, *args, **kwargs):
+		super(MainWindow, self).__init__(*args, **kwargs)
 		uic.loadUi("7i76e.ui", self)
-		self.version = '0.0'
+		self.version = '0.0.1'
 		self.setWindowTitle('7i76e Configuration Tool Version {}'.format(self.version))
 		self.show()
-
 
 	# Auto connected menu action callbacks
 	@pyqtSlot()
@@ -71,7 +70,6 @@ class App(QMainWindow):
 			dialog.ui.bitsLB.setText('32 bit OS')
 		dialog.exec_()
 
-
 	def help(self, index):
 		dialog = QtWidgets.QDialog()
 		dialog.ui = helpDialog()
@@ -79,7 +77,10 @@ class App(QMainWindow):
 		dialog.ui.label.setText(helptext.descriptions(index))
 		dialog.exec_()
 
-if __name__ == "__main__":
+def main():
 	app = QApplication(sys.argv)
-	ex = App()
+	ex = MainWindow()
 	sys.exit(app.exec_())
+
+if __name__ == "__main__":
+	main()
