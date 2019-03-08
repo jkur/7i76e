@@ -14,7 +14,7 @@ Installing
 
     pip3 install git+https://github.com/jethornton/7i76e.git
 
-3. To run the 7i76e Configuration Tool. In a terminal do:
+3. Run the 7i76e Configuration Tool. In a terminal do:
 ::
 
     7i76e
