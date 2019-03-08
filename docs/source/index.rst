@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 7i76e Configuration Tool Documentation
-=====================================
+======================================
 
 .. toctree::
    :maxdepth: 1
