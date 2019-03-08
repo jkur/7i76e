@@ -1,9 +1,9 @@
-.. 7i96 documentation master file, created by
+.. 7i76e documentation master file, created by
    sphinx-quickstart on Fri Jan 11 15:50:41 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-7i96 Configuration Tool Documentation
+7i76e Configuration Tool Documentation
 =====================================
 
 .. toctree::
