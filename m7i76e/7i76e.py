@@ -4,7 +4,9 @@
 import sys, os, configparser, platform
 from PyQt5 import uic, QtWidgets
 from PyQt5.QtCore import pyqtSlot, Qt
-from PyQt5.QtWidgets import (QApplication, QMainWindow, QFileDialog, QLineEdit, QSpinBox, QCheckBox, QComboBox, QLabel, QGroupBox, QDoubleSpinBox, QMessageBox)
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QFileDialog, QLineEdit)
+from PyQt5.QtWidgets import (QSpinBox, QCheckBox, QComboBox, QLabel, QGroupBox)
+from PyQt5.QtWidgets import (QDoubleSpinBox, QMessageBox)
 import m7i76e.buildcombos as buildcombos
 import m7i76e.loadini as loadini
 import m7i76e.checkit as checkit
@@ -16,21 +18,15 @@ from m7i76e.help import Ui_Dialog as helpDialog
 from m7i76e.about import Ui_about as aboutDialog
 
 UI_FILE = os.path.join(os.path.dirname(__file__), "7i76e.ui")
+VERSION = '0.0.3'
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         uic.loadUi(UI_FILE, self)
-        self.version = '0.0.1'
         self.config = configparser.ConfigParser(strict=False)
         self.cwd = os.getcwd()
-        #self.linuxcncDir = os.path.expanduser('~/linuxcnc')
-        #self.test = '~/linuxcnc/configs/' + 'fred'
-        #print(os.path.expanduser(self.test))
-        #self.configsDir = os.path.expanduser('~/linuxcnc/configs')
-        #self.gcodeDir = os.path.expanduser('~/linuxcnc/nc_files')
-        #self.subroutineDir = os.path.expanduser('~/linuxcnc/subroutines')
-        self.setWindowTitle('7i76e Configuration Tool Version {}'.format(self.version))
+        self.setWindowTitle('7i76e Configuration Tool Version {}'.format(VERSION))
         self.configNameUnderscored = ''
         self.checkConfig = checkit.config
         self.builddirs = buildfiles.builddirs
@@ -51,10 +47,6 @@ class MainWindow(QMainWindow):
             'ladderSectionsSB', 'ladderSymbolsSB', 'ladderS32InputsSB',
             'ladderS32OuputsSB', 'ladderFloatInputsSB', 'ladderFloatOutputsSB']
         self.units = False
-        # for testing
-        #self.config.read('/home/john/linuxcnc/configs/fred/fred.ini')
-        #self.iniLoad()
-
         self.show()
 
     # Auto connected menu action callbacks
@@ -85,7 +77,6 @@ class MainWindow(QMainWindow):
         dialog = QtWidgets.QDialog()
         dialog.ui = aboutDialog()
         dialog.ui.setupUi(dialog)
-        #dialog.ui.label.setText(text)
         dialog.ui.versionLB.setText('Version {}'.format(self.version))
         dialog.ui.systemLB.setText(self.pcStats.system)
         dialog.ui.releaseLB.setText('Kernel {}'.format(self.pcStats.release))
@@ -423,7 +414,6 @@ class MainWindow(QMainWindow):
                     getattr(self, item[2]).setChecked(eval(self.config[item[0]][item[1]]))
                 if isinstance(getattr(self, item[2]), QGroupBox):
                     getattr(self, item[2]).setChecked(eval(self.config[item[0]][item[1]]))
-                    #print(self.config[item[0]][item[1]])
                 if isinstance(getattr(self, item[2]), QComboBox):
                     index = getattr(self, item[2]).findData(self.config[item[0]][item[1]])
                     if index >= 0:
@@ -433,7 +423,6 @@ class MainWindow(QMainWindow):
         dialog = QtWidgets.QDialog()
         dialog.ui = errorDialog()
         dialog.ui.setupUi(dialog)
-        #dialog.ui.windowTitle('Configuration Errors')
         dialog.ui.label.setText(text)
         dialog.exec_()
 

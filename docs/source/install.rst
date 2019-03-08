@@ -22,7 +22,7 @@ Installing
 To upgrade the 7i76e Configuration Tool In a terminal do
 ::
 
-    pip3 install git+https://github.com/jethornton/7i76e.git upgrade
+    pip3 install git+https://github.com/jethornton/7i76e.git --upgrade
 
 
 To uninstall the 7i76e Configuration Tool
