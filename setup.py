@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="7i76e",
-    version="0.0.1",
+    version="0.0.2",
     author="John Thornton",
     author_email="<jt@gnipsel.com>",
     description="Mesa configuration tool for 7i76e",
