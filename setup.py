@@ -8,7 +8,7 @@ setup(
     version="0.0.1",
     author="John Thornton",
     author_email="<jt@gnipsel.com>",
-    description="Mesa 7i76e configuration tool",
+    description="Mesa configuration tool for 7i76e",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/jethornton/7i76e",
@@ -17,7 +17,7 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     entry_points={
-        'gui_scripts': ['7i76e=7i76e.7i76e:main',],
+        'gui_scripts': ['7i76e=m7i76e.7i76e:main',],
     },
 )
 

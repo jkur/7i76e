@@ -1,1 +1,1 @@
-recursive-include 7i76e *.ui *.py
+include m7i76e/*.ui
