@@ -15,14 +15,14 @@ Installing
     pip3 install git+https://github.com/jethornton/7i76e.git
 
 3. Create a file in your home directory called ``.xsessionrc`` and add the
-    following if your using Debian 9.
+following if your using Debian 9.
 ::
 
   if [ -d $HOME/.local/bin ]; then
     export PATH="$HOME/.local/bin:$PATH"
   fi
 
-3. Run the 7i76e Configuration Tool. In a terminal do:
+4. Run the 7i76e Configuration Tool. In a terminal do:
 ::
 
     7i76e
