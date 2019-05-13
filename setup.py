@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
- # list of (destination, source_file) tuples
+# list of (destination, source_file) tuples
 DATA_FILES = [('~/.local/bin', ['m7i76e/mesaflash64', 'm7i76e/mesaflash32',])]
 data_files = [(os.path.expanduser(dest), src_list) for dest, src_list in DATA_FILES]
 
