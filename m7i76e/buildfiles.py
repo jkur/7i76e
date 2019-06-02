@@ -605,7 +605,7 @@ def buildhal(parent):
 def buildio(parent):
 	ioFilePath = os.path.join(parent.configPath, 'io.hal')
 	ioContents = []
-	ioContents = ['# This file was created with the 7i96 Wizard on ']
+	ioContents = ['# This file was created with the 7i76e Wizard on ']
 	ioContents.append(datetime.now().strftime('%b %d %Y %H:%M:%S') + '\n')
 	ioContents.append('# If you make changes to this file your screwed\n\n')
 
@@ -823,7 +823,7 @@ _/FILES_CLASSICLADDER
 def buildio(parent):
 	ioFilePath = os.path.join(parent.configPath, 'io.hal')
 	ioContents = []
-	ioContents = ['# This file was created with the 7i96 Wizard on ']
+	ioContents = ['# This file was created with the 7i76e Wizard on ']
 	ioContents.append(datetime.now().strftime('%b %d %Y %H:%M:%S') + '\n')
 	ioContents.append('# If you make changes to this file your screwed\n\n')
 
