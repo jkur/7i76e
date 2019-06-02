@@ -30,7 +30,7 @@ def buildini(parent):
 	if not os.path.exists(parent.configPath):
 		os.mkdir(parent.configPath)
 
-	iniContents = ['# This file was created with the 7i96 Wizard on ']
+	iniContents = ['# This file was created with the 7i76e Wizard on ']
 	iniContents.append(datetime.now().strftime('%b %d %Y %H:%M:%S') + '\n')
 	iniContents.append('# Changes to most things are ok and will be read by the wizard\n')
 
@@ -432,6 +432,8 @@ def buildini(parent):
 		iniContents.append('HOME_USE_INDEX = {}\n'.format(parent.homeUseIndex_4.isChecked()))
 		iniContents.append('HOME_IGNORE_LIMITS = {}\n'.format(parent.homeIgnoreLimits_4.isChecked()))
 
+################# add the rest of the joints up to 6
+
 	# build the [SPINDLE] section if enabled
 	if parent.spindleTypeCB.currentText() != 'None':
 		iniContents.append('\n[SPINDLE]\n')
@@ -475,6 +477,48 @@ def buildini(parent):
 	iniContents.append('INPUT_JOINT_9 = {}\n'.format(parent.inputJoint_9.currentData()))
 	iniContents.append('INPUT_10 = {}\n'.format(parent.input_10.currentText()))
 	iniContents.append('INPUT_JOINT_10 = {}\n'.format(parent.inputJoint_10.currentData()))
+	iniContents.append('INPUT_11 = {}\n'.format(parent.input_11.currentText()))
+	iniContents.append('INPUT_JOINT_11 = {}\n'.format(parent.inputJoint_11.currentData()))
+	iniContents.append('INPUT_12 = {}\n'.format(parent.input_12.currentText()))
+	iniContents.append('INPUT_JOINT_12 = {}\n'.format(parent.inputJoint_12.currentData()))
+	iniContents.append('INPUT_13 = {}\n'.format(parent.input_13.currentText()))
+	iniContents.append('INPUT_JOINT_13 = {}\n'.format(parent.inputJoint_13.currentData()))
+	iniContents.append('INPUT_14 = {}\n'.format(parent.input_14.currentText()))
+	iniContents.append('INPUT_JOINT_14 = {}\n'.format(parent.inputJoint_14.currentData()))
+	iniContents.append('INPUT_15 = {}\n'.format(parent.input_15.currentText()))
+	iniContents.append('INPUT_JOINT_15 = {}\n'.format(parent.inputJoint_15.currentData()))
+	iniContents.append('INPUT_16 = {}\n'.format(parent.input_16.currentText()))
+	iniContents.append('INPUT_JOINT_16 = {}\n'.format(parent.inputJoint_16.currentData()))
+	iniContents.append('INPUT_17 = {}\n'.format(parent.input_17.currentText()))
+	iniContents.append('INPUT_JOINT_17 = {}\n'.format(parent.inputJoint_17.currentData()))
+	iniContents.append('INPUT_18 = {}\n'.format(parent.input_18.currentText()))
+	iniContents.append('INPUT_JOINT_18 = {}\n'.format(parent.inputJoint_18.currentData()))
+	iniContents.append('INPUT_19 = {}\n'.format(parent.input_19.currentText()))
+	iniContents.append('INPUT_JOINT_19 = {}\n'.format(parent.inputJoint_19.currentData()))
+	iniContents.append('INPUT_20 = {}\n'.format(parent.input_20.currentText()))
+	iniContents.append('INPUT_JOINT_20 = {}\n'.format(parent.inputJoint_20.currentData()))
+	iniContents.append('INPUT_21 = {}\n'.format(parent.input_21.currentText()))
+	iniContents.append('INPUT_JOINT_21 = {}\n'.format(parent.inputJoint_21.currentData()))
+	iniContents.append('INPUT_22 = {}\n'.format(parent.input_22.currentText()))
+	iniContents.append('INPUT_JOINT_22 = {}\n'.format(parent.inputJoint_22.currentData()))
+	iniContents.append('INPUT_23 = {}\n'.format(parent.input_23.currentText()))
+	iniContents.append('INPUT_JOINT_23 = {}\n'.format(parent.inputJoint_23.currentData()))
+	iniContents.append('INPUT_24 = {}\n'.format(parent.input_24.currentText()))
+	iniContents.append('INPUT_JOINT_24 = {}\n'.format(parent.inputJoint_24.currentData()))
+	iniContents.append('INPUT_25 = {}\n'.format(parent.input_25.currentText()))
+	iniContents.append('INPUT_JOINT_25 = {}\n'.format(parent.inputJoint_25.currentData()))
+	iniContents.append('INPUT_26 = {}\n'.format(parent.input_26.currentText()))
+	iniContents.append('INPUT_JOINT_26 = {}\n'.format(parent.inputJoint_26.currentData()))
+	iniContents.append('INPUT_27 = {}\n'.format(parent.input_27.currentText()))
+	iniContents.append('INPUT_JOINT_27 = {}\n'.format(parent.inputJoint_27.currentData()))
+	iniContents.append('INPUT_28 = {}\n'.format(parent.input_28.currentText()))
+	iniContents.append('INPUT_JOINT_28 = {}\n'.format(parent.inputJoint_28.currentData()))
+	iniContents.append('INPUT_29 = {}\n'.format(parent.input_29.currentText()))
+	iniContents.append('INPUT_JOINT_29 = {}\n'.format(parent.inputJoint_29.currentData()))
+	iniContents.append('INPUT_30 = {}\n'.format(parent.input_30.currentText()))
+	iniContents.append('INPUT_JOINT_30 = {}\n'.format(parent.inputJoint_30.currentData()))
+	iniContents.append('INPUT_31 = {}\n'.format(parent.input_31.currentText()))
+	iniContents.append('INPUT_JOINT_31 = {}\n'.format(parent.inputJoint_31.currentData()))
 
 
 	# build the [OUTPUTS] section
@@ -485,6 +529,18 @@ def buildini(parent):
 	iniContents.append('OUTPUT_2 = {}\n'.format(parent.output_2.currentText()))
 	iniContents.append('OUTPUT_3 = {}\n'.format(parent.output_3.currentText()))
 	iniContents.append('OUTPUT_4 = {}\n'.format(parent.output_4.currentText()))
+	iniContents.append('OUTPUT_5 = {}\n'.format(parent.output_5.currentText()))
+	iniContents.append('OUTPUT_6 = {}\n'.format(parent.output_6.currentText()))
+	iniContents.append('OUTPUT_7 = {}\n'.format(parent.output_7.currentText()))
+	iniContents.append('OUTPUT_8 = {}\n'.format(parent.output_8.currentText()))
+	iniContents.append('OUTPUT_9 = {}\n'.format(parent.output_9.currentText()))
+	iniContents.append('OUTPUT_10 = {}\n'.format(parent.output_10.currentText()))
+	iniContents.append('OUTPUT_11 = {}\n'.format(parent.output_11.currentText()))
+	iniContents.append('OUTPUT_12 = {}\n'.format(parent.output_12.currentText()))
+	iniContents.append('OUTPUT_13 = {}\n'.format(parent.output_13.currentText()))
+	iniContents.append('OUTPUT_14 = {}\n'.format(parent.output_14.currentText()))
+	iniContents.append('OUTPUT_15 = {}\n'.format(parent.output_15.currentText()))
+	
 
 	# build the [OPTIIONS] section
 	iniContents.append('\n[OPTIONS]\n')
@@ -507,7 +563,7 @@ def buildini(parent):
 def buildhal(parent):
 	halFilePath = os.path.join(parent.configPath, parent.configNameUnderscored + '.hal')
 	halContents = []
-	halContents = ['# This file was created with the 7i96 Wizard on ']
+	halContents = ['# This file was created with the 7i76e Wizard on ']
 	halContents.append(datetime.now().strftime('%b %d %Y %H:%M:%S') + '\n')
 	halContents.append('# If you make changes to this file DO NOT run the configuration tool again!\n')
 	halContents.append('# This file will be replaced with a new file if you do!\n\n')
@@ -572,9 +628,9 @@ def buildhal(parent):
 
 	if parent.spindleTypeCB.currentText() != 'None':
 		halContents.append('\n# Spindle\n')
-		halContents.append('setp hm2_7i96.0.pwmgen.00.output-type 0\n')
-		halContents.append('setp hm2_7i96.0.pwmgen.00.scale [SPINDLE]MAX_RPM\n')
-		halContents.append('setp hm2_7i96.0.pwmgen.pwm_frequency [SPINDLE]PWM_FREQUENCY\n')
+		halContents.append('setp hm2_7i76e.0.pwmgen.00.output-type 0\n')
+		halContents.append('setp hm2_7i76e.0.pwmgen.00.scale [SPINDLE]MAX_RPM\n')
+		halContents.append('setp hm2_7i76e.0.pwmgen.pwm_frequency [SPINDLE]PWM_FREQUENCY\n')
 
 	halContents.append('\n# Standard I/O Block - EStop, Etc\n')
 	halContents.append('# create a signal for the estop loopback\n')
@@ -828,64 +884,64 @@ def buildio(parent):
 	ioContents.append('# If you make changes to this file your screwed\n\n')
 
 	# build the inputs
-	for index in range(11):
+	for index in range(31):
 		inputText = getattr(parent, 'input_' + str(index)).currentText()
 		inputJoint = getattr(parent, 'inputJoint_' + str(index)).currentData()
 		if inputText == 'Home':
-			ioContents.append('net home-joint-{0} joint.{0}.home-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net home-joint-{0} joint.{0}.home-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 		elif inputText == 'Both Limit':
-			ioContents.append('net limits-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net limits-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 			ioContents.append('net limits-joint-{0} joint.{0}.pos-lim-sw-in\n'.format(inputJoint))
 		elif inputText == 'Min Limit':
-			ioContents.append('net min-limit-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net min-limit-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 		elif inputText == 'Max Limit':
-			ioContents.append('net max-limit-joint-{0} joint.{0}.pos-lim-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net max-limit-joint-{0} joint.{0}.pos-lim-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 		elif inputText == 'Home & Limit':
-			ioContents.append('net home-limit-joint-{0} joint.{0}.home-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net home-limit-joint-{0} joint.{0}.home-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 			ioContents.append('net home-limit-joint-{0} joint.{0}.neg-lim-sw-in\n'.format(inputJoint))
 			ioContents.append('net home-limit-joint-{0} joint.{0}.pos-lim-sw-in\n'.format(inputJoint))
 		elif inputText == 'Min Limit & Home':
-			ioContents.append('net min-limit-home-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net min-limit-home-joint-{0} joint.{0}.neg-lim-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 			ioContents.append('net min-limit-home-joint-{0} joint.{0}.home-sw-in\n'.format(inputJoint))
 		elif inputText == 'Max Limit & Home':
-			ioContents.append('net max-limit-home-joint-{0} joint.{0}.pos-lim-sw-in <= hm2_7i96.0.gpio.00{1}.in\n'.format(inputJoint, index))
+			ioContents.append('net max-limit-home-joint-{0} joint.{0}.pos-lim-sw-in <= hm2_7i76e.0.7i76.0.0.input-{1:02}.in\n'.format(inputJoint, index))
 			ioContents.append('net max-limit-home-joint-{0} joint.{0}.home-sw-in\n'.format(inputJoint))
 		elif inputText == 'Probe':
-			ioContents.append('net probe-input motion.probe-input <= hm2_7i96.0.gpio.00{}.in\n'.format(index))
+			ioContents.append('net probe-input motion.probe-input <= hm2_7i76e.0.7i76.0.0.input-{0:02}.in\n'.format(index))
 		elif inputText == 'Digital In 0':
-			ioContents.append('net digital-input-0 motion.digital-in-00 <= hm2_7i96.0.gpio.00{}.in\n'.format(index))
+			ioContents.append('net digital-input-0 motion.digital-in-00 <= hm2_7i76e.0.7i76.0.0.input-{0:02}.in\n'.format(index))
 		elif inputText == 'Digital In 1':
-			ioContents.append('net digital-input-1 motion.digital-in-01 <= hm2_7i96.0.gpio.00{}.in\n'.format(index))
+			ioContents.append('net digital-input-1 motion.digital-in-01 <= hm2_7i76e.0.7i76.0.0.input-{0:02}.in\n'.format(index))
 		elif inputText == 'Digital In 2':
-			ioContents.append('net digital-input-2 motion.digital-in-02 <= hm2_7i96.0.gpio.00{}.in\n'.format(index))
+			ioContents.append('net digital-input-2 motion.digital-in-02 <= hm2_7i76e.0.7i76.0.0.input-{0:02}.in\n'.format(index))
 		elif inputText == 'Digital In 3':
-			ioContents.append('net digital-input-3 motion.digital-in-03 <= hm2_7i96.0.gpio.00{}.in\n'.format(index))
+			ioContents.append('net digital-input-3 motion.digital-in-03 <= hm2_7i76e.0.7i76.0.0.input-{0:02}.in\n'.format(index))
 
 	# build the outputs
-	for index in range(5):
+	for index in range(15):
 		outputText = getattr(parent, 'output_' + str(index)).currentText()
 		if outputText == 'Coolant Flood':
-			ioContents.append('net flood-output iocontrol.0.coolant-flood => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net flood-output iocontrol.0.coolant-flood => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Coolant Mist':
-			ioContents.append('net mist-output iocontrol.0.coolant-mist => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net mist-output iocontrol.0.coolant-mist => hm2_7i76e.0.7i76.0.0.output-0{0:02}\n'.format(index))
 		if outputText == 'Spindle On':
-			ioContents.append('net spindle-on motion.spindle-on => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net spindle-on motion.spindle-on => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Spindle CW':
-			ioContents.append('net spindle-cw motion.spindle-forward => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net spindle-cw motion.spindle-forward => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Spindle CCW':
-			ioContents.append('net spindle-ccw motion.spindle-reverse => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net spindle-ccw motion.spindle-reverse => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Spindle Brake':
-			ioContents.append('net spindle-brake motion.spindle-brake => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net spindle-brake motion.spindle-brake => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'E-Stop Out':
-			ioContents.append('net estop-loop hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net estop-loop hm2_7i76e.0.7i76.0.0.output-0{0:02}\n'.format(index))
 		if outputText == 'Digital Out 0':
-			ioContents.append('net digital-out-0 motion.digital-out-00 => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net digital-out-0 motion.digital-out-00 => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Digital Out 1':
-			ioContents.append('net digital-out-2 motion.digital-out-01 => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net digital-out-2 motion.digital-out-01 => hm2_7i76e.0.7i76.0.0.output-0{0:02}\n'.format(index))
 		if outputText == 'Digital Out 2':
-			ioContents.append('net digital-out-2 motion.digital-out-02 => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net digital-out-2 motion.digital-out-02 => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Digital Out 3':
-			ioContents.append('net digital-out-3 motion.digital-out-03 => hm2_7i96.0.ssr.00.out-0{}\n'.format(index))
+			ioContents.append('net digital-out-3 motion.digital-out-03 => hm2_7i76e.0.7i76.0.0.output-0:02}\n'.format(index))
 
 	with open(ioFilePath, 'w') as ioFile:
 		ioFile.writelines(ioContents)
