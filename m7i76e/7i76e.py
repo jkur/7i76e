@@ -18,7 +18,7 @@ from m7i76e.help import Ui_Dialog as helpDialog
 from m7i76e.about import Ui_about as aboutDialog
 
 UI_FILE = os.path.join(os.path.dirname(__file__), "7i76e.ui")
-VERSION = '0.0.3'
+VERSION = '0.0.4'
 
 class MainWindow(QMainWindow):
     def __init__(self):
