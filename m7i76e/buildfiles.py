@@ -432,10 +432,11 @@ def buildini(parent):
 		iniContents.append('HOME_USE_INDEX = {}\n'.format(parent.homeUseIndex_4.isChecked()))
 		iniContents.append('HOME_IGNORE_LIMITS = {}\n'.format(parent.homeIgnoreLimits_4.isChecked()))
 
-################# add the rest of the joints up to 6
 
 	# build the [SPINDLE] section if enabled
-	if parent.spindleTypeCB.currentText() != 'None':
+
+	########################## this is not correct for sure
+	if parent.spindleTypeCB.currentText() != 'Select':
 		iniContents.append('\n[SPINDLE]\n')
 		iniContents.append('SPINDLE_TYPE = {}\n'.format(parent.spindleTypeCB.itemData(parent.spindleTypeCB.currentIndex())))
 		iniContents.append('SCALE = {}\n'.format(parent.spindleScale.text()))
@@ -626,7 +627,8 @@ def buildhal(parent):
 		halContents.append('setp pid.{0}.maxoutput [JOINT_{0}]MAX_OUTPUT\n'.format(str(index)))
 		halContents.append('setp pid.{0}.maxerror [JOINT_{0}]MAX_ERROR\n'.format(str(index)))
 
-	if parent.spindleTypeCB.currentText() != 'None':
+################ this is not correct
+	if parent.spindleTypeCB.currentText() != 'Select':
 		halContents.append('\n# Spindle\n')
 		halContents.append('setp hm2_7i76e.0.pwmgen.00.output-type 0\n')
 		halContents.append('setp hm2_7i76e.0.pwmgen.00.scale [SPINDLE]MAX_RPM\n')
