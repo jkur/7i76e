@@ -1035,7 +1035,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home is usually set to 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1055,7 +1055,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home Offset can be used to back off of the home switch&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1075,7 +1075,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Velocity is in units per second&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1095,7 +1095,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Latch Velocity is in user units per second&lt;br/&gt;usually set slower than Search Velocity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1873,7 +1873,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home is usually set to 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1903,7 +1903,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home Offset can be used to back off of the home switch&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1913,7 +1913,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Velocity is in units per second&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -1943,7 +1943,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Latch Velocity is in user units per second&lt;br/&gt;usually set slower than Search Velocity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -2649,7 +2649,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home is usually set to 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -2669,7 +2669,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home Offset can be used to back off of the home switch&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -2689,7 +2689,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Velocity is in units per second&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -2709,7 +2709,7 @@ QGroupBox::title {
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Latch Velocity is in user units per second&lt;br/&gt;usually set slower than Search Velocity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -3409,7 +3409,7 @@ to max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home Offset can be used to back off of the home switch&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -3429,7 +3429,7 @@ to max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home is usually set to 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -3459,7 +3459,7 @@ to max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Velocity is in units per second&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -3479,7 +3479,7 @@ to max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Latch Velocity is in user units per second&lt;br/&gt;usually set slower than Search Velocity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -4197,7 +4197,7 @@ max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home is usually set to 0&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -4217,7 +4217,7 @@ max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Home Offset can be used to back off of the home switch&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -4237,7 +4237,7 @@ max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Velocity is in units per second&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
@@ -4257,7 +4257,7 @@ max speed</string>
                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Latch Velocity is in user units per second&lt;br/&gt;usually set slower than Search Velocity&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                 </widget>
                </item>
