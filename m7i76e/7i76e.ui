@@ -4983,6 +4983,19 @@ QGroupBox::title {
          <string>Inputs 0 - 15</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_49">
+         <item row="15" column="2">
+          <widget class="QComboBox" name="input_14"/>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>Input 3</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QComboBox" name="inputJoint_2"/>
+         </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_11">
            <property name="text">
@@ -5031,16 +5044,6 @@ QGroupBox::title {
          </item>
          <item row="3" column="2">
           <widget class="QComboBox" name="input_2"/>
-         </item>
-         <item row="3" column="3">
-          <widget class="QComboBox" name="inputJoint_2"/>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_14">
-           <property name="text">
-            <string>Input 3</string>
-           </property>
-          </widget>
          </item>
          <item row="16" column="0">
           <widget class="QLabel" name="label_60">
@@ -5183,9 +5186,6 @@ QGroupBox::title {
          <item row="14" column="2">
           <widget class="QComboBox" name="input_13"/>
          </item>
-         <item row="15" column="2">
-          <widget class="QComboBox" name="input_14"/>
-         </item>
          <item row="12" column="2">
           <widget class="QComboBox" name="input_11"/>
          </item>
@@ -5207,6 +5207,118 @@ QGroupBox::title {
          </item>
          <item row="12" column="3">
           <widget class="QComboBox" name="inputJoint_11"/>
+         </item>
+         <item row="1" column="4">
+          <widget class="QCheckBox" name="inputInvert_0">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QCheckBox" name="inputInvert_2">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QCheckBox" name="inputInvert_3">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QCheckBox" name="inputInvert_4">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="QCheckBox" name="inputInvert_5">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4">
+          <widget class="QCheckBox" name="inputInvert_6">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="4">
+          <widget class="QCheckBox" name="inputInvert_7">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="4">
+          <widget class="QCheckBox" name="inputInvert_8">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="4">
+          <widget class="QCheckBox" name="inputInvert_9">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="4">
+          <widget class="QCheckBox" name="inputInvert_10">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="4">
+          <widget class="QCheckBox" name="inputInvert_11">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="4">
+          <widget class="QCheckBox" name="inputInvert_12">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="4">
+          <widget class="QCheckBox" name="inputInvert_13">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="4">
+          <widget class="QCheckBox" name="inputInvert_14">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="4">
+          <widget class="QCheckBox" name="inputInvert_15">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QCheckBox" name="inputInvert_1">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
@@ -5237,6 +5349,18 @@ QGroupBox::title {
          <string>Inputs 16 - 31</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_50">
+         <item row="16" column="2">
+          <widget class="QComboBox" name="input_27"/>
+         </item>
+         <item row="20" column="2">
+          <widget class="QComboBox" name="input_30"/>
+         </item>
+         <item row="2" column="2">
+          <widget class="QComboBox" name="input_16"/>
+         </item>
+         <item row="6" column="2">
+          <widget class="QComboBox" name="input_19"/>
+         </item>
          <item row="9" column="2">
           <widget class="QComboBox" name="input_21"/>
          </item>
@@ -5248,9 +5372,6 @@ QGroupBox::title {
          </item>
          <item row="19" column="2">
           <widget class="QComboBox" name="input_29"/>
-         </item>
-         <item row="16" column="2">
-          <widget class="QComboBox" name="input_27"/>
          </item>
          <item row="13" column="2">
           <widget class="QComboBox" name="input_25"/>
@@ -5276,9 +5397,6 @@ QGroupBox::title {
          <item row="18" column="2">
           <widget class="QComboBox" name="input_28"/>
          </item>
-         <item row="20" column="2">
-          <widget class="QComboBox" name="input_30"/>
-         </item>
          <item row="5" column="3">
           <widget class="QComboBox" name="inputJoint_18"/>
          </item>
@@ -5291,9 +5409,6 @@ QGroupBox::title {
             <string>Input 16</string>
            </property>
           </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QComboBox" name="input_16"/>
          </item>
          <item row="0" column="3">
           <widget class="QLabel" name="label_360">
@@ -5338,9 +5453,6 @@ QGroupBox::title {
             <string>Input 31</string>
            </property>
           </widget>
-         </item>
-         <item row="6" column="2">
-          <widget class="QComboBox" name="input_19"/>
          </item>
          <item row="14" column="0">
           <widget class="QLabel" name="label_413">
@@ -5461,6 +5573,118 @@ QGroupBox::title {
          </item>
          <item row="18" column="3">
           <widget class="QComboBox" name="inputJoint_28"/>
+         </item>
+         <item row="2" column="4">
+          <widget class="QCheckBox" name="inputInvert_16">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QCheckBox" name="inputInvert_17">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QCheckBox" name="inputInvert_18">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="QCheckBox" name="inputInvert_19">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="4">
+          <widget class="QCheckBox" name="inputInvert_20">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="4">
+          <widget class="QCheckBox" name="inputInvert_21">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="4">
+          <widget class="QCheckBox" name="inputInvert_22">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="4">
+          <widget class="QCheckBox" name="inputInvert_23">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="4">
+          <widget class="QCheckBox" name="inputInvert_24">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="4">
+          <widget class="QCheckBox" name="inputInvert_25">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="4">
+          <widget class="QCheckBox" name="inputInvert_26">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="4">
+          <widget class="QCheckBox" name="inputInvert_27">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="18" column="4">
+          <widget class="QCheckBox" name="inputInvert_28">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="19" column="4">
+          <widget class="QCheckBox" name="inputInvert_29">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="20" column="4">
+          <widget class="QCheckBox" name="inputInvert_30">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
+         </item>
+         <item row="21" column="4">
+          <widget class="QCheckBox" name="inputInvert_31">
+           <property name="text">
+            <string>Invert</string>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>
