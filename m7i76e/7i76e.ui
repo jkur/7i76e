@@ -4956,17 +4956,11 @@ max speed</string>
        <attribute name="title">
         <string>Inputs</string>
        </attribute>
-       <widget class="QGroupBox" name="gridGroupBox">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>301</width>
-          <height>551</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QGroupBox {
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QGroupBox" name="gridGroupBox">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
     font: bold;
     border: 2px solid silver;
     border-radius: 6px;
@@ -4978,361 +4972,579 @@ QGroupBox::title {
     left: 7px;
     padding: 0px 5px 0px 5px;
 }</string>
-        </property>
-        <property name="title">
-         <string>Inputs 0 - 15</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_49">
-         <item row="15" column="2">
-          <widget class="QComboBox" name="input_14"/>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_14">
-           <property name="text">
-            <string>Input 3</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="3">
-          <widget class="QComboBox" name="inputJoint_2"/>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="label_11">
-           <property name="text">
-            <string>Input 0</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="3">
-          <widget class="QComboBox" name="inputJoint_3"/>
-         </item>
-         <item row="1" column="2">
-          <widget class="QComboBox" name="input_0"/>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="label_28">
-           <property name="text">
-            <string>Type</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_29">
-           <property name="text">
-            <string>Joint</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="3">
-          <widget class="QComboBox" name="inputJoint_0"/>
-         </item>
-         <item row="2" column="2">
-          <widget class="QComboBox" name="input_1"/>
-         </item>
-         <item row="2" column="3">
-          <widget class="QComboBox" name="inputJoint_1"/>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="label_13">
-           <property name="text">
-            <string>Input 2</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QComboBox" name="input_2"/>
-         </item>
-         <item row="16" column="0">
-          <widget class="QLabel" name="label_60">
-           <property name="text">
-            <string>Input 15</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="QComboBox" name="input_3"/>
-         </item>
-         <item row="11" column="0">
-          <widget class="QLabel" name="label_21">
-           <property name="text">
-            <string>Input 10</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="2">
-          <widget class="QComboBox" name="input_10"/>
-         </item>
-         <item row="5" column="3">
-          <widget class="QComboBox" name="inputJoint_4"/>
-         </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_15">
-           <property name="text">
-            <string>Input 4</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_12">
-           <property name="text">
-            <string>Input 1</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="QComboBox" name="input_4"/>
-         </item>
-         <item row="6" column="0">
-          <widget class="QLabel" name="label_16">
-           <property name="text">
-            <string>Input 5</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="2">
-          <widget class="QComboBox" name="input_5"/>
-         </item>
-         <item row="6" column="3">
-          <widget class="QComboBox" name="inputJoint_5"/>
-         </item>
-         <item row="7" column="0">
-          <widget class="QLabel" name="label_17">
-           <property name="text">
-            <string>Input 6</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="2">
-          <widget class="QComboBox" name="input_6"/>
-         </item>
-         <item row="7" column="3">
-          <widget class="QComboBox" name="inputJoint_6"/>
-         </item>
-         <item row="8" column="0">
-          <widget class="QLabel" name="label_18">
-           <property name="text">
-            <string>Input 7</string>
-           </property>
-          </widget>
-         </item>
-         <item row="8" column="2">
-          <widget class="QComboBox" name="input_7"/>
-         </item>
-         <item row="8" column="3">
-          <widget class="QComboBox" name="inputJoint_7"/>
-         </item>
-         <item row="9" column="0">
-          <widget class="QLabel" name="label_19">
-           <property name="text">
-            <string>Input 8</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="2">
-          <widget class="QComboBox" name="input_8"/>
-         </item>
-         <item row="9" column="3">
-          <widget class="QComboBox" name="inputJoint_8"/>
-         </item>
-         <item row="10" column="0">
-          <widget class="QLabel" name="label_20">
-           <property name="text">
-            <string>Input 9</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="2">
-          <widget class="QComboBox" name="input_9"/>
-         </item>
-         <item row="10" column="3">
-          <widget class="QComboBox" name="inputJoint_9"/>
-         </item>
-         <item row="14" column="3">
-          <widget class="QComboBox" name="inputJoint_13"/>
-         </item>
-         <item row="13" column="3">
-          <widget class="QComboBox" name="inputJoint_12"/>
-         </item>
-         <item row="11" column="3">
-          <widget class="QComboBox" name="inputJoint_10"/>
-         </item>
-         <item row="12" column="0">
-          <widget class="QLabel" name="label_51">
-           <property name="text">
-            <string>Input 11</string>
-           </property>
-          </widget>
-         </item>
-         <item row="13" column="0">
-          <widget class="QLabel" name="label_46">
-           <property name="text">
-            <string>Input 12</string>
-           </property>
-          </widget>
-         </item>
-         <item row="15" column="0">
-          <widget class="QLabel" name="label_358">
-           <property name="text">
-            <string>Input 14</string>
-           </property>
-          </widget>
-         </item>
-         <item row="16" column="2">
-          <widget class="QComboBox" name="input_15"/>
-         </item>
-         <item row="14" column="2">
-          <widget class="QComboBox" name="input_13"/>
-         </item>
-         <item row="12" column="2">
-          <widget class="QComboBox" name="input_11"/>
-         </item>
-         <item row="13" column="2">
-          <widget class="QComboBox" name="input_12"/>
-         </item>
-         <item row="14" column="0">
-          <widget class="QLabel" name="label_57">
-           <property name="text">
-            <string>Input 13</string>
-           </property>
-          </widget>
-         </item>
-         <item row="15" column="3">
-          <widget class="QComboBox" name="inputJoint_14"/>
-         </item>
-         <item row="16" column="3">
-          <widget class="QComboBox" name="inputJoint_15"/>
-         </item>
-         <item row="12" column="3">
-          <widget class="QComboBox" name="inputJoint_11"/>
-         </item>
-         <item row="1" column="4">
-          <widget class="QCheckBox" name="inputInvert_0">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="4">
-          <widget class="QCheckBox" name="inputInvert_2">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="4">
-          <widget class="QCheckBox" name="inputInvert_3">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="4">
-          <widget class="QCheckBox" name="inputInvert_4">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="4">
-          <widget class="QCheckBox" name="inputInvert_5">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="4">
-          <widget class="QCheckBox" name="inputInvert_6">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="8" column="4">
-          <widget class="QCheckBox" name="inputInvert_7">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="4">
-          <widget class="QCheckBox" name="inputInvert_8">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="4">
-          <widget class="QCheckBox" name="inputInvert_9">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="4">
-          <widget class="QCheckBox" name="inputInvert_10">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="4">
-          <widget class="QCheckBox" name="inputInvert_11">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="13" column="4">
-          <widget class="QCheckBox" name="inputInvert_12">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="14" column="4">
-          <widget class="QCheckBox" name="inputInvert_13">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="15" column="4">
-          <widget class="QCheckBox" name="inputInvert_14">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="16" column="4">
-          <widget class="QCheckBox" name="inputInvert_15">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="4">
-          <widget class="QCheckBox" name="inputInvert_1">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QGroupBox" name="gridGroupBox_4">
-        <property name="geometry">
-         <rect>
-          <x>450</x>
-          <y>10</y>
-          <width>301</width>
-          <height>551</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QGroupBox {
+          </property>
+          <property name="title">
+           <string>Inputs 0 - 15</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_49">
+           <item row="14" column="2">
+            <widget class="QComboBox" name="input_13">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="text">
+              <string>Input 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QComboBox" name="inputJoint_1">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0">
+            <widget class="QLabel" name="label_60">
+             <property name="text">
+              <string>Input 15</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="4">
+            <widget class="QCheckBox" name="inputInvert_6">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="4">
+            <widget class="QCheckBox" name="inputInvert_15">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="2">
+            <widget class="QComboBox" name="input_14">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="text">
+              <string>Input 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QComboBox" name="inputJoint_2">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="text">
+              <string>Input 0</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QComboBox" name="inputJoint_3">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QComboBox" name="input_0">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_28">
+             <property name="text">
+              <string>Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_29">
+             <property name="text">
+              <string>Joint</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QComboBox" name="inputJoint_0">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QComboBox" name="input_1">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QComboBox" name="input_2">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QComboBox" name="input_3">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>Input 10</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="2">
+            <widget class="QComboBox" name="input_10">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QComboBox" name="inputJoint_4">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>Input 4</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_12">
+             <property name="text">
+              <string>Input 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QComboBox" name="input_4">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_16">
+             <property name="text">
+              <string>Input 5</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>Input 6</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QComboBox" name="input_5">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QComboBox" name="inputJoint_5">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QComboBox" name="input_6">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="3">
+            <widget class="QComboBox" name="inputJoint_6">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_18">
+             <property name="text">
+              <string>Input 7</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QComboBox" name="input_7">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QComboBox" name="inputJoint_7">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>Input 8</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="2">
+            <widget class="QComboBox" name="input_8">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QComboBox" name="inputJoint_8">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>Input 9</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="2">
+            <widget class="QComboBox" name="input_9">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QComboBox" name="inputJoint_9">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QComboBox" name="inputJoint_13">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QComboBox" name="inputJoint_12">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="3">
+            <widget class="QComboBox" name="inputJoint_10">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QLabel" name="label_51">
+             <property name="text">
+              <string>Input 11</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>Input 12</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="0">
+            <widget class="QLabel" name="label_358">
+             <property name="text">
+              <string>Input 14</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="2">
+            <widget class="QComboBox" name="input_15">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="2">
+            <widget class="QComboBox" name="input_11">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="2">
+            <widget class="QComboBox" name="input_12">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="label_57">
+             <property name="text">
+              <string>Input 13</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="3">
+            <widget class="QComboBox" name="inputJoint_14">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="3">
+            <widget class="QComboBox" name="inputJoint_15">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="3">
+            <widget class="QComboBox" name="inputJoint_11">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QCheckBox" name="inputInvert_0">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QCheckBox" name="inputInvert_2">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QCheckBox" name="inputInvert_3">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QCheckBox" name="inputInvert_4">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QCheckBox" name="inputInvert_5">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="4">
+            <widget class="QCheckBox" name="inputInvert_7">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="4">
+            <widget class="QCheckBox" name="inputInvert_8">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="4">
+            <widget class="QCheckBox" name="inputInvert_9">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="4">
+            <widget class="QCheckBox" name="inputInvert_10">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="4">
+            <widget class="QCheckBox" name="inputInvert_11">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="4">
+            <widget class="QCheckBox" name="inputInvert_12">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="4">
+            <widget class="QCheckBox" name="inputInvert_13">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="15" column="4">
+            <widget class="QCheckBox" name="inputInvert_14">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QCheckBox" name="inputInvert_1">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="gridGroupBox_4">
+          <property name="styleSheet">
+           <string notr="true">QGroupBox {
     font: bold;
     border: 2px solid silver;
     border-radius: 6px;
@@ -5344,350 +5556,576 @@ QGroupBox::title {
     left: 7px;
     padding: 0px 5px 0px 5px;
 }</string>
-        </property>
-        <property name="title">
-         <string>Inputs 16 - 31</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_50">
-         <item row="16" column="2">
-          <widget class="QComboBox" name="input_27"/>
-         </item>
-         <item row="20" column="2">
-          <widget class="QComboBox" name="input_30"/>
-         </item>
-         <item row="2" column="2">
-          <widget class="QComboBox" name="input_16"/>
-         </item>
-         <item row="6" column="2">
-          <widget class="QComboBox" name="input_19"/>
-         </item>
-         <item row="9" column="2">
-          <widget class="QComboBox" name="input_21"/>
-         </item>
-         <item row="2" column="3">
-          <widget class="QComboBox" name="inputJoint_16"/>
-         </item>
-         <item row="12" column="2">
-          <widget class="QComboBox" name="input_24"/>
-         </item>
-         <item row="19" column="2">
-          <widget class="QComboBox" name="input_29"/>
-         </item>
-         <item row="13" column="2">
-          <widget class="QComboBox" name="input_25"/>
-         </item>
-         <item row="14" column="2">
-          <widget class="QComboBox" name="input_26"/>
-         </item>
-         <item row="4" column="3">
-          <widget class="QComboBox" name="inputJoint_17"/>
-         </item>
-         <item row="8" column="2">
-          <widget class="QComboBox" name="input_20"/>
-         </item>
-         <item row="6" column="3">
-          <widget class="QComboBox" name="inputJoint_19"/>
-         </item>
-         <item row="11" column="2">
-          <widget class="QComboBox" name="input_23"/>
-         </item>
-         <item row="10" column="2">
-          <widget class="QComboBox" name="input_22"/>
-         </item>
-         <item row="18" column="2">
-          <widget class="QComboBox" name="input_28"/>
-         </item>
-         <item row="5" column="3">
-          <widget class="QComboBox" name="inputJoint_18"/>
-         </item>
-         <item row="21" column="2">
-          <widget class="QComboBox" name="input_31"/>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="label_54">
-           <property name="text">
-            <string>Input 16</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="3">
-          <widget class="QLabel" name="label_360">
-           <property name="text">
-            <string>Joint</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="label_359">
-           <property name="text">
-            <string>Type</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="QComboBox" name="input_17"/>
-         </item>
-         <item row="5" column="0">
-          <widget class="QLabel" name="label_361">
-           <property name="text">
-            <string>Input 18</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
-          <widget class="QComboBox" name="input_18"/>
-         </item>
-         <item row="6" column="0">
-          <widget class="QLabel" name="label_411">
-           <property name="text">
-            <string>Input 19</string>
-           </property>
-          </widget>
-         </item>
-         <item row="21" column="0">
-          <widget class="QLabel" name="label_412">
-           <property name="text">
-            <string>Input 31</string>
-           </property>
-          </widget>
-         </item>
-         <item row="14" column="0">
-          <widget class="QLabel" name="label_413">
-           <property name="text">
-            <string>Input 26</string>
-           </property>
-          </widget>
-         </item>
-         <item row="8" column="3">
-          <widget class="QComboBox" name="inputJoint_20"/>
-         </item>
-         <item row="8" column="0">
-          <widget class="QLabel" name="label_414">
-           <property name="text">
-            <string>Input 20</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="label_415">
-           <property name="text">
-            <string>Input 17</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="0">
-          <widget class="QLabel" name="label_416">
-           <property name="text">
-            <string>Input 21</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="3">
-          <widget class="QComboBox" name="inputJoint_21"/>
-         </item>
-         <item row="10" column="0">
-          <widget class="QLabel" name="label_417">
-           <property name="text">
-            <string>Input 22</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="0">
-          <widget class="QLabel" name="label_418">
-           <property name="text">
-            <string>Input 23</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="3">
-          <widget class="QComboBox" name="inputJoint_22"/>
-         </item>
-         <item row="11" column="3">
-          <widget class="QComboBox" name="inputJoint_23"/>
-         </item>
-         <item row="12" column="0">
-          <widget class="QLabel" name="label_419">
-           <property name="text">
-            <string>Input 24</string>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="3">
-          <widget class="QComboBox" name="inputJoint_24"/>
-         </item>
-         <item row="13" column="0">
-          <widget class="QLabel" name="label_420">
-           <property name="text">
-            <string>Input 25</string>
-           </property>
-          </widget>
-         </item>
-         <item row="13" column="3">
-          <widget class="QComboBox" name="inputJoint_25"/>
-         </item>
-         <item row="16" column="0">
-          <widget class="QLabel" name="label_421">
-           <property name="text">
-            <string>Input 27</string>
-           </property>
-          </widget>
-         </item>
-         <item row="18" column="0">
-          <widget class="QLabel" name="label_422">
-           <property name="text">
-            <string>Input 28</string>
-           </property>
-          </widget>
-         </item>
-         <item row="20" column="0">
-          <widget class="QLabel" name="label_423">
-           <property name="text">
-            <string>Input 30</string>
-           </property>
-          </widget>
-         </item>
-         <item row="19" column="0">
-          <widget class="QLabel" name="label_424">
-           <property name="text">
-            <string>Input 29</string>
-           </property>
-          </widget>
-         </item>
-         <item row="14" column="3">
-          <widget class="QComboBox" name="inputJoint_26"/>
-         </item>
-         <item row="19" column="3">
-          <widget class="QComboBox" name="inputJoint_29"/>
-         </item>
-         <item row="20" column="3">
-          <widget class="QComboBox" name="inputJoint_30"/>
-         </item>
-         <item row="21" column="3">
-          <widget class="QComboBox" name="inputJoint_31"/>
-         </item>
-         <item row="16" column="3">
-          <widget class="QComboBox" name="inputJoint_27"/>
-         </item>
-         <item row="18" column="3">
-          <widget class="QComboBox" name="inputJoint_28"/>
-         </item>
-         <item row="2" column="4">
-          <widget class="QCheckBox" name="inputInvert_16">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="4">
-          <widget class="QCheckBox" name="inputInvert_17">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="4">
-          <widget class="QCheckBox" name="inputInvert_18">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="4">
-          <widget class="QCheckBox" name="inputInvert_19">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="8" column="4">
-          <widget class="QCheckBox" name="inputInvert_20">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="9" column="4">
-          <widget class="QCheckBox" name="inputInvert_21">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="10" column="4">
-          <widget class="QCheckBox" name="inputInvert_22">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="11" column="4">
-          <widget class="QCheckBox" name="inputInvert_23">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="12" column="4">
-          <widget class="QCheckBox" name="inputInvert_24">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="13" column="4">
-          <widget class="QCheckBox" name="inputInvert_25">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="14" column="4">
-          <widget class="QCheckBox" name="inputInvert_26">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="16" column="4">
-          <widget class="QCheckBox" name="inputInvert_27">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="18" column="4">
-          <widget class="QCheckBox" name="inputInvert_28">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="19" column="4">
-          <widget class="QCheckBox" name="inputInvert_29">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="20" column="4">
-          <widget class="QCheckBox" name="inputInvert_30">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-         <item row="21" column="4">
-          <widget class="QCheckBox" name="inputInvert_31">
-           <property name="text">
-            <string>Invert</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
+          </property>
+          <property name="title">
+           <string>Inputs 16 - 31</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_50">
+           <item row="20" column="2">
+            <widget class="QComboBox" name="input_30">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="2">
+            <widget class="QComboBox" name="input_26">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="2">
+            <widget class="QComboBox" name="input_27">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QComboBox" name="input_16">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QComboBox" name="input_19">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="2">
+            <widget class="QComboBox" name="input_21">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QComboBox" name="inputJoint_16">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="2">
+            <widget class="QComboBox" name="input_24">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="2">
+            <widget class="QComboBox" name="input_29">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="2">
+            <widget class="QComboBox" name="input_25">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QComboBox" name="inputJoint_17">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="2">
+            <widget class="QComboBox" name="input_20">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QComboBox" name="inputJoint_19">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="2">
+            <widget class="QComboBox" name="input_23">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="2">
+            <widget class="QComboBox" name="input_22">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="2">
+            <widget class="QComboBox" name="input_28">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="3">
+            <widget class="QComboBox" name="inputJoint_18">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="2">
+            <widget class="QComboBox" name="input_31">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_54">
+             <property name="text">
+              <string>Input 16</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_360">
+             <property name="text">
+              <string>Joint</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_359">
+             <property name="text">
+              <string>Type</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QComboBox" name="input_17">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_361">
+             <property name="text">
+              <string>Input 18</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QComboBox" name="input_18">
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="label_411">
+             <property name="text">
+              <string>Input 19</string>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="0">
+            <widget class="QLabel" name="label_412">
+             <property name="text">
+              <string>Input 31</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="label_413">
+             <property name="text">
+              <string>Input 26</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="3">
+            <widget class="QComboBox" name="inputJoint_20">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_414">
+             <property name="text">
+              <string>Input 20</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_415">
+             <property name="text">
+              <string>Input 17</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="label_416">
+             <property name="text">
+              <string>Input 21</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="3">
+            <widget class="QComboBox" name="inputJoint_21">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_417">
+             <property name="text">
+              <string>Input 22</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="0">
+            <widget class="QLabel" name="label_418">
+             <property name="text">
+              <string>Input 23</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="3">
+            <widget class="QComboBox" name="inputJoint_22">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="3">
+            <widget class="QComboBox" name="inputJoint_23">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QLabel" name="label_419">
+             <property name="text">
+              <string>Input 24</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="3">
+            <widget class="QComboBox" name="inputJoint_24">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
+            <widget class="QLabel" name="label_420">
+             <property name="text">
+              <string>Input 25</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="3">
+            <widget class="QComboBox" name="inputJoint_25">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="0">
+            <widget class="QLabel" name="label_421">
+             <property name="text">
+              <string>Input 27</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="0">
+            <widget class="QLabel" name="label_422">
+             <property name="text">
+              <string>Input 28</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="0">
+            <widget class="QLabel" name="label_423">
+             <property name="text">
+              <string>Input 30</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="0">
+            <widget class="QLabel" name="label_424">
+             <property name="text">
+              <string>Input 29</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="3">
+            <widget class="QComboBox" name="inputJoint_26">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="3">
+            <widget class="QComboBox" name="inputJoint_29">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="3">
+            <widget class="QComboBox" name="inputJoint_30">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="3">
+            <widget class="QComboBox" name="inputJoint_31">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="3">
+            <widget class="QComboBox" name="inputJoint_27">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="3">
+            <widget class="QComboBox" name="inputJoint_28">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QCheckBox" name="inputInvert_16">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="4">
+            <widget class="QCheckBox" name="inputInvert_17">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="4">
+            <widget class="QCheckBox" name="inputInvert_18">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="4">
+            <widget class="QCheckBox" name="inputInvert_19">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="4">
+            <widget class="QCheckBox" name="inputInvert_20">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="4">
+            <widget class="QCheckBox" name="inputInvert_21">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="4">
+            <widget class="QCheckBox" name="inputInvert_22">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="11" column="4">
+            <widget class="QCheckBox" name="inputInvert_23">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="4">
+            <widget class="QCheckBox" name="inputInvert_24">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="4">
+            <widget class="QCheckBox" name="inputInvert_25">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="4">
+            <widget class="QCheckBox" name="inputInvert_26">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="16" column="4">
+            <widget class="QCheckBox" name="inputInvert_27">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="4">
+            <widget class="QCheckBox" name="inputInvert_28">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="4">
+            <widget class="QCheckBox" name="inputInvert_29">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="4">
+            <widget class="QCheckBox" name="inputInvert_30">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+           <item row="21" column="4">
+            <widget class="QCheckBox" name="inputInvert_31">
+             <property name="text">
+              <string>Invert</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="outputs">
        <attribute name="title">
