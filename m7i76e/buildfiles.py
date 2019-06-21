@@ -979,7 +979,7 @@ def buildio(parent):
 		if outputText == 'Digital Out 2':
 			ioContents.append('net digital-out-2 motion.digital-out-02 => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 		if outputText == 'Digital Out 3':
-			ioContents.append('net digital-out-3 motion.digital-out-03 => hm2_7i76e.0.7i76.0.0.output-0:02}\n'.format(index))
+			ioContents.append('net digital-out-3 motion.digital-out-03 => hm2_7i76e.0.7i76.0.0.output-{0:02}\n'.format(index))
 
 	with open(ioFilePath, 'w') as ioFile:
 		ioFile.writelines(ioContents)
