@@ -23,7 +23,6 @@ setup(
     data_files=data_files,
     include_package_data=True,
     entry_points={
-        'gui_scripts': ['7i76e=m7i76e.7i76e:main',],
+        'gui_scripts': ['7i76e=m7i76e.mesa7i76e:main',],
     },
 )
-
